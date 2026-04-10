@@ -1,6 +1,10 @@
 # ResumeIQ - Frontend
 
-AI-Powered ATS Resume Analyzer built with React.
+A React application that analyzes resumes against job descriptions using AI.
+
+## Live Demo
+- Frontend: https://resumeiq-frontend-89cm.vercel.app
+- Backend: https://resumeiq-backend-production-95c8.up.railway.app
 
 ## Tech Stack
 - React
@@ -10,7 +14,7 @@ AI-Powered ATS Resume Analyzer built with React.
 ## Features
 - Paste resume text for analysis
 - Paste job description
-- View ATS match score
+- View ATS match score (0-100)
 - See missing keywords
 - View strong points
 - Get improvement suggestions
@@ -21,6 +25,5 @@ AI-Powered ATS Resume Analyzer built with React.
 3. Run `npm start`
 4. Make sure backend is running on port 5000
 
-## Live Demo
-- Frontend: deployed on Vercel
-- Backend: deployed on Railway
+## Author
+Fouzia - [GitHub](https://github.com/fouzia-dev-fullstack)
