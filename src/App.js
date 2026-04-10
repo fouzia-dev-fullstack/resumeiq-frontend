@@ -36,14 +36,14 @@ function App() {
   return (
     <div className="app">
       <div className="hero">
-        <h1>🎯 ResumeIQ</h1>
+        <h1>ResumeIQ</h1>
         <p>AI-Powered ATS Resume Analyzer</p>
       </div>
 
       <div className="container">
         <div className="input-section">
           <div className="input-box">
-            <label>📄 Paste Your Resume</label>
+            <label>Paste Your Resume</label>
             <textarea
               placeholder="Paste your resume text here..."
               value={resumeText}
@@ -53,7 +53,7 @@ function App() {
           </div>
 
           <div className="input-box">
-            <label>💼 Job Description</label>
+            <label>Job Description</label>
             <textarea
               placeholder="Paste the job description here..."
               value={jobDescription}
@@ -70,7 +70,7 @@ function App() {
           onClick={handleAnalyze}
           disabled={loading}
         >
-          {loading ? '⏳ Analyzing...' : '🚀 Analyze Resume'}
+          {loading ? 'Analyzing...' : 'Analyze Resume'}
         </button>
 
         {analysis && (
@@ -84,7 +84,7 @@ function App() {
 
             <div className="cards-grid">
               <div className="card strong">
-                <h3>✅ Strong Points</h3>
+                <h3>Strong Points</h3>
                 <div className="chips">
                   {analysis.strongPoints.map((point, i) => (
                     <span key={i} className="chip green">{point}</span>
@@ -93,7 +93,7 @@ function App() {
               </div>
 
               <div className="card missing">
-                <h3>❌ Missing Keywords</h3>
+                <h3>Missing Keywords</h3>
                 <div className="chips">
                   {analysis.missingKeywords.map((keyword, i) => (
                     <span key={i} className="chip red">{keyword}</span>
@@ -103,7 +103,7 @@ function App() {
             </div>
 
             <div className="card suggestions">
-              <h3>💡 Suggestions</h3>
+              <h3>Suggestions</h3>
               <ul>
                 {analysis.suggestions.map((suggestion, i) => (
                   <li key={i}>{suggestion}</li>
