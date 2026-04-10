@@ -18,7 +18,7 @@ function App() {
     setError('');
 
     try {
-      const response = await fetch('https://resumeiq-backend-production-95c8.up.railway.app/api/analyze', {', {
+      const response = await fetch('https://resumeiq-backend-production-95c8.up.railway.app/api/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ resumeText, jobDescription })
